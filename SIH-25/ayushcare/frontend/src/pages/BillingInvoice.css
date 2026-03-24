@@ -1,0 +1,181 @@
+.invoice-wrapper {
+  display: flex;
+  max-width: 1100px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+}
+
+/* LEFT GREEN PANEL */
+.invoice-side {
+  width: 28%;
+  background: #1f4d2b;
+  color: white;
+  padding: 32px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.invoice-heading-vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 36px;
+  font-weight: 900;
+  margin: auto;
+  opacity: 0.5;
+}
+
+.brand-box h3 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.details-side p {
+  margin: 6px 0;
+}
+
+.terms-box h4 {
+  margin-top: 14px;
+  font-size: 18px;
+}
+
+.terms-box p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* RIGHT SIDE */
+.invoice-main {
+  width: 72%;
+  padding: 36px 40px;
+}
+
+.invoice-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.invoice-top h2 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+/* TABLE */
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+}
+
+.invoice-table th {
+  background: #e6f4e7;
+  color: #1f4d2b;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.invoice-table td {
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* TOTAL BOX */
+.summary-box {
+  margin-top: 20px;
+  background: #e6f4e7;
+  padding: 18px 24px;
+  border-radius: 14px;
+  font-size: 16px;
+}
+
+.summary-box p {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* PAID STAMP */
+.paid-stamp {
+  margin-top: 16px;
+  background: #1f4d2b;
+  color: white;
+  padding: 14px 30px;
+  font-weight: 800;
+  width: fit-content;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+/* Download Button */
+.download-btn {
+  margin-top: 20px;
+  padding: 12px 26px;
+  background: #1f4d2b;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background: #32693d;
+}
+/* Search Input inside Sidebar */
+.invoice-search {
+  margin-bottom: 18px;
+}
+
+.invoice-search-input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #1f4d2b;
+}
+
+.invoice-search-input::placeholder {
+  color: #376948;
+  font-weight: 600;
+}
+.payment-actions {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.unpaid-stamp {
+  background: #ff4d4d;
+  color: white;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 12px;
+  border: none;
+}
+
+.pay-now-btn {
+  background: #2563eb;
+  color: white;
+  padding: 12px 28px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.pay-now-btn:hover {
+  background: #1e4bb8;
+}

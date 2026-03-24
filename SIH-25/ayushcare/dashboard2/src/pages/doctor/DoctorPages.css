@@ -1,0 +1,407 @@
+.page-root {
+  width: 100%;
+  min-height: calc(100vh - 90px);
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-title {
+  font-size: 28px; /* Larger for landscape */
+  font-weight: 800;
+  color: #2f4f3a;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgba(47, 79, 58, 0.1);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Wider cards */
+  gap: 24px; /* More spacing */
+}
+
+/* Landscape specific styles */
+@media (min-width: 1024px) {
+  .page-root {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .page-title {
+    width: 100%;
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr); /* Always 3 columns on desktop */
+  }
+  
+  .section-block {
+    margin-top: 0;
+    height: fit-content;
+  }
+}
+
+.section-block {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.section-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2f4f3a;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-title::before {
+  content: "•";
+  color: #4CAF50;
+  font-size: 24px;
+}
+
+.section-text {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.table-placeholder {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  font-size: 15px;
+  color: #666;
+  border: 1px solid #eee;
+}
+
+/* Dashboard cards specific styling */
+.dashboard-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f9fdfa 100%);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  border-left: 5px solid #4CAF50;
+}
+
+.dashboard-card h3 {
+  color: #2f4f3a;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.dashboard-card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+/* Tracker Page Specific Styles */
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-subtitle {
+  color: #666;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: white;
+}
+
+.stat-content h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  color: #666;
+  font-weight: 600;
+}
+
+.stat-number {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #2f4f3a;
+}
+
+.stat-label {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Gender Chart */
+.gender-chart {
+  margin-top: 20px;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chart-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.chart-bar-label {
+  width: 80px;
+  font-weight: 600;
+  color: #2f4f3a;
+}
+
+.chart-bar-bg {
+  flex: 1;
+  height: 40px;
+  background: #f0f0f0;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.chart-bar-fill {
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 15px;
+  transition: width 1s ease;
+}
+
+.chart-bar-fill.male {
+  background: linear-gradient(90deg, #4ECDC4, #44A08D);
+}
+
+.chart-bar-fill.female {
+  background: linear-gradient(90deg, #FF6B6B, #C44D58);
+}
+
+.chart-bar-value {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.chart-bar-percentage {
+  width: 50px;
+  text-align: right;
+  font-weight: 600;
+  color: #2f4f3a;
+}
+
+/* Age Cards */
+.age-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.age-card:hover {
+  transform: translateY(-3px);
+}
+
+.age-range {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2f4f3a;
+  margin-bottom: 10px;
+}
+
+.age-count {
+  font-size: 36px;
+  font-weight: 700;
+  color: #4CAF50;
+  margin-bottom: 5px;
+}
+
+.age-percentage {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Monthly Trends */
+.monthly-trend {
+  margin-top: 20px;
+}
+
+.trend-chart {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 200px;
+  padding: 20px 0;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.trend-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.trend-bar {
+  width: 40px;
+  background: linear-gradient(to top, #667eea, #764ba2);
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  transition: height 0.5s ease;
+}
+
+.trend-value {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  font-weight: 600;
+  color: #2f4f3a;
+  white-space: nowrap;
+}
+
+.trend-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+}
+
+/* Therapy Distribution */
+.therapy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.therapy-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.therapy-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.therapy-name {
+  font-weight: 600;
+  color: #2f4f3a;
+}
+
+.therapy-count {
+  font-size: 14px;
+  color: #666;
+}
+
+.therapy-bar {
+  flex: 2;
+  height: 10px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.therapy-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #FFD93D, #FEBE10);
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+
+.therapy-percentage {
+  width: 50px;
+  text-align: right;
+  font-weight: 600;
+  color: #2f4f3a;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .stat-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .therapy-item {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .chart-bar-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  
+  .chart-bar-label {
+    width: auto;
+  }
+  
+  .trend-chart {
+    overflow-x: auto;
+    padding: 20px;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  
+  .trend-bar-container {
+    min-width: 50px;
+  }
+}

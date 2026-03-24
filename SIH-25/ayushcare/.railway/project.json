@@ -1,0 +1,7 @@
+{
+  "services": {
+    "django": {
+      "root": "ayushcare/backend/backend01"
+    }
+  }
+}

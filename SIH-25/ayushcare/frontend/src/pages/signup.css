@@ -1,0 +1,139 @@
+/* Full-page background */
+.signup-root {
+  height: 100vh;
+  width: 100%;
+  background: url("/signup-bg.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  padding: 20px;
+}
+
+/* Signup Card Box */
+.signup-box {
+  background: rgba(255, 255, 255, 0.88);
+  padding: 35px 40px;
+  width: 450px;
+  border-radius: 18px;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.signup-box h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #225b39;
+}
+
+/* Remove role selection (NO MORE As Patient / As Clinic buttons) */
+.role-select {
+  display: none !important;
+}
+
+/* Input fields rounded edges */
+form input {
+  width: 100%;
+  padding: 14px;
+  margin-top: 14px;
+  border: 1px solid #bcd8c4;
+  border-radius: 22px;    /* <-- Rounded fields */
+  font-size: 16px;
+  background: #ffffff;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+form input:focus {
+  border-color: #3c7f50;
+  background: #f5fff8;
+}
+
+/* OTP row */
+.otp-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.otp-btn {
+  padding: 14px 16px;
+  background: #3c7f50;
+  color: white;
+  border: none;
+  border-radius: 14px;    /* <-- Rounded */
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.otp-btn:hover:not(:disabled) {
+  background: #2f6940;
+}
+
+.otp-btn:disabled {
+  background: #92b59d;
+  cursor: not-allowed;
+}
+
+/* Create Account Button */
+.signup-submit {
+  margin-top: 25px;
+  width: 100%;
+  padding: 15px;
+  background: #225b39;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;    /* <-- Rounded like Login button */
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.signup-submit:hover {
+  background: #1a472d;
+}
+
+/* Login link text */
+.login-link {
+  margin-top: 18px;
+  font-size: 14px;
+}
+.otp-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+}
+
+.popup-content button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #1c6b41;
+  color: white;
+  font-weight: bold;
+}
+
+.close-btn {
+  background: #999 !important;
+}

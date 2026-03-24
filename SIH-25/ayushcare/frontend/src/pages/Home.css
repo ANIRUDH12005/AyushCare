@@ -1,0 +1,574 @@
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #fdfdfd;
+  text-shadow: 
+  0 2px 4px rgba(0,0,0,0.7),
+  0 0 10px rgba(0,0,0,0.4);
+  margin-top: 30px;
+  margin-bottom: 25px;    
+}
+
+/* newly added */
+.description-section h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff; /* white */
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+}
+
+.description-section p {
+  text-align: center;
+  font-size: 17px;
+  color: #e8f5e9; /* soft pale white-green */
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.6;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}.btn-primary:hover {
+  background: #1f4d2d;
+}
+
+/* ==================== MODAL STYLES ===================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.modal-box {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.modal-box h3 {
+  margin-top: 0;
+  color: #225b39;
+  margin-bottom: 20px;
+}
+
+.modal-box select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ==================== DASHBOARD POLISH ===================== */
+.dashboard-header {
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  color: #225b39;
+  font-weight: 800;
+}
+
+.dashboard-section h2 {
+  font-size: 1.5rem;
+  color: #2f4f29;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.session-item {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.session-time {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2b6f37;
+  min-width: 100px;
+}
+
+/* PAGE MAIN CONTAINER */
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px; 
+  position: relative;
+  z-index: 2;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.social-icons i {
+  font-size: 18px;
+  cursor: pointer;
+  color: #2f4f29;
+  transition: 0.2s ease;
+}
+
+.social-icons i:hover {
+  transform: scale(1.2);
+  transition: 0.25s;
+  color: #4f8f52;
+}
+
+/*  Wrapper Box for Why Section */
+.why-box {
+  max-width: 900px;               /* keeps it centered */
+  margin: 40px auto;              /* space above + center horizontally */
+  background: #ffffff;            /* white box */
+  padding: 35px 30px;
+  border-radius: 16px;            /* rounded corners */
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08); 
+  border: 1px solid #e3f0e6;      /* soft green border */
+}
+/* 🌿 Inner Heading Styling */
+.why-section h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+  margin-bottom: 10px;
+}
+
+.why-section p {
+  text-align: center;
+  font-size: 15px;
+    color: #f1fdf1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* 🌿 3 Feature Cards (Detox, Mind-Body, Healing) */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 25px;
+}
+
+.why-card {
+  background: #f5fbf6;
+  padding: 18px 14px;
+  border-radius: 12px;
+  border: 1px solid #d9ecd9;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.399);
+  transition: 0.2s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.why-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #345a35;
+  margin-bottom: 8px;
+}
+
+.why-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/*  Stats Section (5000+, 50+, 20 years) */
+.stats-section {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stats-box {
+  background: #f5fbf6;
+  padding: 20px 25px;
+  border-radius: 12px;
+  border: 1px solid #d9ecd9;
+  text-align: center;
+  width: 180px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.stats-box h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2f4f29;
+  margin-bottom: 6px;
+}
+
+.stats-box p {
+  font-size: 14px;
+  color: #555;
+}
+/* HOME PAGE BACKGROUND */
+.home-root {
+  background: url("/home1-bg.jpg") center/cover no-repeat fixed;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 90px;
+  position: fixed;     /* required for overlay */
+  z-index: 1;
+  animation: bgFade 6s ease-in-out infinite alternate;
+
+}
+
+/* Optional light blur overlay for readability */
+.home-root::before {
+  content: normal;
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.599); /* soft white overlay */
+  backdrop-filter: blur(2px);
+  z-index: -1;
+}
+@keyframes bgFade {
+  from { filter: brightness(1); }
+  to { filter: brightness(0.92); }
+}
+
+/* --- CONTACT SECTION WRAPPER --- */
+.contact-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px 0;
+}/* --- CENTER IMAGE SECTION --- */
+.center-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.center-image-container img {
+  width: 340px;
+  height: 220px;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* --- GRID FOR CONTACT DETAILS --- */
+.contact-grid {
+  background: rgba(255, 255, 255, 0.75); /* glass effect */
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  padding: 30px 40px;
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* Improve grid spacing & alignment */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  text-align: center;
+}
+
+/* Individual item */
+/* Individual item */
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;  /* slightly smaller spacing */
+}
+
+/* Icon centered above text */
+.contact-item i {
+  font-size: 32px;         /* slightly bigger for clarity */
+  color: #2f4f29;
+  margin: 0;               /* remove bottom margin */
+}
+
+/* Title directly below icon */
+.contact-item h4 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+  color: #1f3b23;
+}
+
+/* Multi-line text fully centered */
+.contact-item p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.4;
+  margin: 0;
+  max-width: 150px; /* keep long text wrapped neatly */
+}
+/* Fix contact icon vertical alignment */
+.fixed-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+/* Larger consistent icon */
+.contact-icon {
+  font-size: 28px;
+  color: #2f4f29;
+  margin-bottom: 6px;
+}
+
+.center-text {
+  text-align: center !important;
+}
+
+/* Make social icons appear side by side */
+.social-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.social-row i, 
+.social-row svg {
+  font-size: 20px;
+  cursor: pointer;
+}
+/* --- UNIFIED 6-CARD GRID --- */
+.why-6-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* All 6 cards same size */
+.why-6-card {
+  background: #ffffff;
+  min-height: 200px;             /* same height for all */
+  padding: 24px 20px;
+  border-radius: 16px;
+  border: 1px solid #d9ecd9;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.why-6-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+.why-6-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2f4f29;
+  margin-bottom: 10px;
+}
+
+.why-6-card p {
+  font-size: 15px;
+  color: #444;
+  margin: 0;
+}
+.centres-wrapper {
+  width: 100%;
+  max-width: 1200px; /* optional */
+  margin: 0 auto;
+  position: relative;
+  padding: 30px 0;
+}
+
+.centres-track {
+  display: flex;
+  align-items: center;
+}
+
+.centre-card {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  border-radius: 14px;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.9);
+  border: none;
+  font-size: 26px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-arrow.prev { left: 12px; }
+.carousel-arrow.next { right: 12px; }
+
+.carousel-arrow:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+/* WRAPPER */
+.centres-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+/* TRACK */
+.centres-track {
+  display: flex;
+  gap: 20px;           /* spacing between images */
+  transition: transform 0.5s ease;
+}
+
+/* EACH CARD */
+.centre-card {
+  width: 320px;
+  height: 200px;
+  border-radius: 14px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.25);
+  flex-shrink: 0;
+}
+
+/* ARROWS */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.8);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.carousel-arrow.left { left: 20px; }
+.carousel-arrow.right { right: 20px; }
+
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto 20px auto;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  color: white;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.8);
+}
+
+.hero-overlay h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.hero-overlay p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.hero-btn {
+  background: #2f6b3f;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 28px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #1f4d2d;
+  transform: translateY(-3px);
+}
+.hero-greeting-fixed {
+  text-align: center;
+  margin-top: -40px;      /* MOVE TEXT UPWARD */
+  margin-bottom: 45px;    /* SPACE BEFORE CAROUSEL */
+  z-index: 5;
+}
+
+.hero-greeting-fixed h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.7);
+}
+
+.hero-greeting-fixed h2 {
+  font-size: 27px;
+  color: #edf6ed;
+  margin-bottom: 18px;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.6);
+}
+

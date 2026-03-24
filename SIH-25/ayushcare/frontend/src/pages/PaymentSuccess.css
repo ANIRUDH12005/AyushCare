@@ -1,0 +1,131 @@
+.payment-success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e6f4e7 0%, #f8f9fa 100%);
+  padding: 2rem;
+}
+
+.payment-success-card {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.success-icon {
+  font-size: 5rem;
+  color: #28a745;
+  margin-bottom: 1rem;
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.payment-success-card h1 {
+  font-size: 2rem;
+  color: #1f4d2b;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.success-message {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.payment-details {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.payment-details p {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.payment-details strong {
+  color: #1f4d2b;
+}
+
+.success-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background: #1f4d2b;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #32693d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(31, 77, 43, 0.3);
+}
+
+.btn-secondary {
+  background: #f8f9fa;
+  color: #333;
+  border: 2px solid #e0e0e0;
+}
+
+.btn-secondary:hover {
+  background: #e9ecef;
+  border-color: #1f4d2b;
+}
+
+@media (max-width: 768px) {
+  .payment-success-card {
+    padding: 2rem;
+  }
+
+  .success-icon {
+    font-size: 4rem;
+  }
+
+  .payment-success-card h1 {
+    font-size: 1.5rem;
+  }
+
+  .success-actions {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+}
+

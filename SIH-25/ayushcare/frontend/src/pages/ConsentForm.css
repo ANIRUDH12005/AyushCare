@@ -1,0 +1,311 @@
+.consent-form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  }
+  
+  .consent-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eef5ef;
+  }
+  
+  .consent-header h1 {
+    font-size: 28px;
+    color: #2f4f3a;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .form-subtitle {
+    color: #666;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .consent-form {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .form-section {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eef5ef;
+  }
+  
+  .form-section:last-child {
+    border-bottom: none;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    color: #2f4f3a;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4CAF50;
+    font-weight: 600;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+  }
+  
+  .form-group {
+    margin-bottom: 25px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2f4f3a;
+    font-size: 14px;
+  }
+  
+  .form-group label::after {
+    content: '';
+    color: #FF6B6B;
+    margin-left: 4px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="tel"],
+  .form-group input[type="date"],
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background: #f9f9f9;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .consent-statements {
+    background: #f9fdfa;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border-left: 5px solid #4CAF50;
+  }
+  
+  .statement-text {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #444;
+    font-size: 15px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .statement-text::before {
+    content: "•";
+    color: #4CAF50;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .checkbox-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .checkbox-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    accent-color: #4CAF50;
+    cursor: pointer;
+  }
+  
+  .checkbox-item label {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #444;
+    cursor: pointer;
+  }
+  
+  .signature-section {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  
+  .signature-section .form-group {
+    flex: 2;
+  }
+  
+  .date-field {
+    flex: 1;
+  }
+  
+  .date-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2f4f3a;
+    font-size: 14px;
+  }
+  
+  .date-display {
+    padding: 14px 16px;
+    background: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 15px;
+    color: #444;
+  }
+  
+  .signature-note {
+    font-size: 12px;
+    color: #888;
+    margin-top: 8px;
+    font-style: italic;
+  }
+  
+  .final-agreement {
+    background: linear-gradient(135deg, #f0f7f0, #e8f5e9);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 40px 0;
+    border: 2px solid #4CAF50;
+  }
+  
+  .agreement-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .agreement-checkbox input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    accent-color: #4CAF50;
+  }
+  
+  .agreement-label {
+    font-size: 18px;
+    color: #2f4f3a;
+    line-height: 1.4;
+    cursor: pointer;
+  }
+  
+  .agreement-label strong {
+    color: #4CAF50;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-top: 30px;
+    border-top: 2px solid #eef5ef;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+    background: linear-gradient(135deg, #45a049, #3d8b40);
+  }
+  
+  .btn-secondary {
+    background: #f5f5f5;
+    color: #666;
+    border: 2px solid #ddd;
+  }
+  
+  .btn-secondary:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .consent-form-container {
+      padding: 20px;
+      margin: 10px;
+    }
+    
+    .form-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .signature-section {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .form-actions {
+      flex-direction: column;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+      width: 100%;
+    }
+  }
+  
+  /* Print Styles */
+  @media print {
+    .consent-form-container {
+      box-shadow: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .form-actions {
+      display: none;
+    }
+    
+    input[type="checkbox"] {
+      transform: scale(1.2);
+    }
+  }

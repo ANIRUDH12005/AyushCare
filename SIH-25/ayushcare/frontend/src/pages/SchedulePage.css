@@ -1,0 +1,260 @@
+/* SchedulePage.css */
+:root {
+  --ayurveda-primary: #4a7c59;      /* Main Ayurvedic green */
+  --ayurveda-secondary: #8fb996;    /* Lighter green */
+  --ayurveda-accent: #2d5a3d;       /* Darker green for accents */
+  --ayurveda-light: #e8f4ea;        /* Very light green for backgrounds */
+  --ayurveda-neutral: #f5f9f6;      /* Neutral light background */
+  --ayurveda-text: #1a2e22;         /* Dark green for text */
+  --ayurveda-text-light: #5a7565;   /* Medium green for secondary text */
+}
+
+.schedule-container {
+  display: flex;
+  gap: 24px;
+  padding: 32px;
+  min-height: 100vh;
+  background: var(--ayurveda-neutral);
+  font-family: "Inter", sans-serif;
+}
+
+/* LEFT Calendar Panel */
+.calendar-container {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px;
+  width: 320px;
+  box-shadow: 0 8px 22px rgba(74, 124, 89, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--ayurveda-light);
+}
+
+.calendar-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--ayurveda-accent);
+  margin-bottom: 14px;
+}
+
+/* Selected Date Box */
+.selected-date-box {
+  margin-top: 16px;
+  padding: 12px 18px;
+  background: var(--ayurveda-light);
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  border-left: 6px solid var(--ayurveda-primary);
+  text-align: center;
+  width: 100%;
+  color: var(--ayurveda-text);
+}
+
+/* REACT CALENDAR CUSTOM STYLE */
+.react-calendar {
+  width: 100%;
+  border: none;
+  background: #ffffff;
+  font-family: inherit;
+  border-radius: 12px;
+}
+
+.react-calendar__navigation button {
+  color: var(--ayurveda-accent);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: var(--ayurveda-light);
+}
+
+.react-calendar__month-view__weekdays {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--ayurveda-primary);
+}
+
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+}
+
+.react-calendar__tile {
+  padding: 10px 0;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: 0.2s ease;
+  color: var(--ayurveda-text);
+}
+
+/* Normal Days */
+.react-calendar__tile:enabled:hover {
+  background: var(--ayurveda-light);
+}
+
+/* Selected Day */
+.react-calendar__tile--active {
+  background: var(--ayurveda-primary) !important;
+  color: white !important;
+  border-radius: 12px;
+}
+
+/* TODAY Highlight */
+.react-calendar__tile--now {
+  background: var(--ayurveda-secondary) !important;
+  color: white !important;
+  font-weight: 700;
+  border-radius: 12px;
+}
+
+/* RIGHT SIDE */
+.slots-section {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 6px 22px rgba(74, 124, 89, 0.08);
+  border: 1px solid var(--ayurveda-light);
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--ayurveda-accent);
+  margin-bottom: 28px;
+}
+
+/* Session Cards */
+.session-card {
+  background: var(--ayurveda-light);
+  border: 1px solid var(--ayurveda-secondary);
+  padding: 22px;
+  border-radius: 16px;
+  margin-bottom: 26px;
+}
+
+.session-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.session-header h3 {
+  color: var(--ayurveda-accent);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.session-time {
+  font-size: 14px;
+  color: var(--ayurveda-text-light);
+  font-weight: 600;
+}
+
+/* Slots Grid */
+.slots-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.slot-btn {
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid var(--ayurveda-secondary);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--ayurveda-text);
+  transition: all 0.2s ease;
+}
+
+.slot-btn:hover {
+  background: var(--ayurveda-secondary);
+  border-color: var(--ayurveda-primary);
+  color: white;
+}
+
+.slot-btn.active {
+  background: var(--ayurveda-primary);
+  color: #fff;
+  border-color: var(--ayurveda-primary);
+}
+
+/* Waiting List */
+.waiting {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: var(--ayurveda-light);
+  border-radius: 12px;
+}
+
+.waiting p {
+  margin: 0;
+  font-weight: 600;
+  color: var(--ayurveda-text);
+}
+
+.wait-btn {
+  border: none;
+  background: var(--ayurveda-primary);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.calendar-box {
+  width: 300px;
+  background: #ffffffcc;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.left-title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #1b3a25;
+}
+
+.selected-date {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.react-calendar {
+  border: none;
+  font-family: inherit;
+  border-radius: 12px;
+  background: #fff;
+  padding: 8px;
+}
+
+.highlight-date {
+  background: #2563eb !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
+
+.react-calendar__tile--active {
+  background: #4e8f52 !important;
+  color: white !important;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.wait-btn:hover {
+  background: var(--ayurveda-accent);
+}
+

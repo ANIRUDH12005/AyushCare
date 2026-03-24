@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark Theme Styles */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --border-color: #e0e0e0;
+  --card-bg: #ffffff;
+  --navbar-bg: #ffffff;
+}
+
+.dark-theme {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border-color: #404040;
+  --card-bg: #2d2d2d;
+  --navbar-bg: #252525;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Apply dark theme to common elements */
+.dark-theme .settings-card,
+.dark-theme .invoice-wrapper,
+.dark-theme .navbar,
+.dark-theme .sidebar,
+.dark-theme .card {
+  background-color: var(--card-bg);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.dark-theme input,
+.dark-theme select,
+.dark-theme textarea {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.dark-theme .dropdown-menu {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+.dark-theme .dropdown-item {
+  color: var(--text-primary);
+}
+
+.dark-theme .dropdown-item:hover {
+  background-color: var(--bg-secondary);
+}

@@ -1,0 +1,38 @@
+.layout-root {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef5ef 0%, #f0f7f1 100%);
+  overflow-x: hidden;
+}
+
+.layout-main {
+  flex: 1;
+  margin-left: 112px; /* sidebar width (80px) + left margin (16px) + extra spacing */
+  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: transparent;
+}
+
+.layout-content {
+  flex: 1;
+  padding: 32px 40px;
+  max-width: calc(100vw - 150px); /* Ensure content doesn't go under sidebar */
+}
+
+/* Landscape optimization */
+@media (min-width: 1024px) {
+  .layout-content {
+    padding: 32px 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: start;
+  }
+  
+  .layout-main {
+    margin-left: 120px;
+  }
+}

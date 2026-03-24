@@ -1,0 +1,68 @@
+.card-root {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(86, 125, 90, 0.1);
+}
+
+.card-root h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #2c3e32;
+}
+
+.card-count {
+  font-size: 32px;
+  font-weight: 700;
+  color: #3b6e4a;
+  margin-bottom: 4px;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  color: #666;
+}
+
+.card-meta {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #888;
+}
+
+.card-therapist {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.status-badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-badge.scheduled {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.status-badge.completed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.checked_in {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.cancelled {
+  background: #fee2e2;
+  color: #991b1b;
+}
+

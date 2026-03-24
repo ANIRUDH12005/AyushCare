@@ -1,0 +1,220 @@
+/* ========================= GLOBAL BACKGROUND ========================= */
+.landing-root {
+  min-height: 100vh;
+  width: 100%;
+  background: url("/bglanding.jpg") center/cover no-repeat fixed;
+  overflow-x: hidden;
+}
+
+/* ========================= NAVBAR ========================= */
+.landing-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background: rgba(233, 250, 228, 0.95);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+.nav-logo img {
+  height: 165px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.nav-links button {
+  background: transparent;
+  border: none;
+  margin: 0 18px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f4d2b;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-links button:hover {
+  color: #4e8f52;
+  transform: translateY(-3px);
+}
+
+.nav-auth button {
+  padding: 10px 24px;
+  border-radius: 28px;
+  font-size: 18px;
+  font-weight: 600;
+  background: #4e8f52;
+  color: white;
+  border: 2px solid #4e8f52;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-auth button:hover {
+  background: #3b6843;
+}
+
+/* ========================= HERO SECTION ========================= */
+.hero-section {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 130px;
+}
+
+.landing-welcome {
+  font-size: 70px;
+  font-weight: 800;
+  color: #f7c59c;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+}
+
+.landing-title {
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #f7c59c;
+  font-variant: small-caps;
+}
+
+/* Book Therapy Button — placed directly after hero content */
+.book-btn {
+  margin-top: 20px;
+  padding: 16px 38px;
+  font-size: 22px;
+  font-weight: 800;
+  background: #bd986c;
+  color: #1f1f1f;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  transition: 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.book-btn:hover {
+  background: #f0c294;
+  color: white;
+  transform: translateY(-4px);
+}
+
+/* ========================= GALLERY SECTION ========================= */
+.gallery-section {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 70px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-title {
+  font-size: 70px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  margin-bottom: 70px;
+  color: #f7c59c;
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  justify-items: center;
+  gap: 35px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.gallery-card {
+  width: 280px;
+  background: #ffdfba;
+  border-radius: 18px;
+  padding: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-10px);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 230px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.gallery-card p {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  font-variant: small-caps;
+}
+
+/* ========================= ABOUT & WORK SECTION ========================= */
+.about-section,
+.work-section {
+  width: 85%;
+  margin: 60px auto;
+  padding: 40px 35px;
+  border-radius: 18px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.about-section h2,
+.work-section h2 {
+  font-size: 55px;
+  font-weight: 900;
+  color: #f7c59c;
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+.about-section p,
+.work-section p {
+  font-size: 19px;
+  line-height: 1.6;
+  max-width: 850px;
+  margin: 0 auto;
+  color: #f7c59c;
+  font-variant: small-caps;
+}
+
+.join-btn {
+  margin-top: 24px;
+  padding: 14px 32px;
+  font-size: 18px;
+  font-weight: 700;
+  background: #bd986c;
+  color: black;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.join-btn:hover {
+  background: #f0c294;
+  color: white;
+  transform: translateY(-4px);
+}

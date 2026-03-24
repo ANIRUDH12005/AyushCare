@@ -1,0 +1,88 @@
+/* Background */
+.notifications-root {
+  background: url("/home-bg.jpg") center/cover no-repeat fixed;
+  min-height: 100vh;
+  width: 100%;
+  padding: 120px 20px 50px;
+}
+
+/* Title */
+.noti-title {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 800;
+  color: #5e6225;
+  margin-bottom: 60px;
+  font-variant: small-caps;
+}
+
+/* GRID LAYOUT */
+.notification-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  width: 80%;
+  margin: auto;
+}
+
+/* BOX STYLE */
+.noti-box {
+  background: #ffffffdd;
+  padding: 35px 28px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+  border-left: 6px solid #2f4f29;
+  transition: 0.3s ease;
+}
+
+.noti-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.3);
+}
+
+/* ICONS */
+.noti-icon {
+  font-size: 50px;
+  color: #2f4f29;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.noti-box h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2f4f29;
+  margin-bottom: 8px;
+}
+
+.noti-box p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+/* BUTTON */
+.noti-btn {
+  padding: 10px 20px;
+  border: none;
+  background: #2f4f29;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.noti-btn:hover {
+  background: #3b6a35;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .notification-grid {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
+}
+                                                                                                        

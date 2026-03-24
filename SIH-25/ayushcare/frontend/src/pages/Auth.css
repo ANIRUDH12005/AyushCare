@@ -1,0 +1,153 @@
+/* ==================== GLOBAL BASE ===================== */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Background container for ALL auth pages */
+.auth-container {
+  background: url("../assets/signup-background2.jpg") no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glass-style box (Same for login, signup, forgot, OTP) */
+.auth-box {
+  background: rgb(255, 255, 255);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px 50px;
+  width: 350px;
+  text-align: center;
+  color: #225b39;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ==================== HEADINGS ===================== */
+.auth-box h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #225b39;
+  /* Exact signup color */
+}
+
+/* ==================== INPUT FIELDS ===================== */
+.auth-box input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid #225b39;
+  border-radius: 22px;
+  font-size: 16px;
+  color: black;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.auth-box input:focus {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: #225b39;
+}
+
+/* Placeholder */
+.auth-box input::placeholder {
+  color: rgba(25, 24, 24, 0.637);
+}
+
+/* ==================== BUTTON ===================== */
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3c7f50;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.auth-box button:hover {
+  background-color: #2b6f37;
+}
+
+/* ==================== LINKS ===================== */
+.auth-box a {
+  color: #3c7f50;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.auth-box a:hover {
+  text-decoration: underline;
+}
+
+/* ==================== FORGOT PASSWORD TEXT ===================== */
+.forgot-text {
+  margin-top: -10px;
+  margin-bottom: 15px;
+  text-align: right;
+  width: 100%;
+  color: #4e8f52;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.forgot-text:hover {
+  color: #2b6f37;
+  text-decoration: underline;
+}
+
+/* ==================== ROLE SELECTION ===================== */
+.role-selection {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.role-selection p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #225b39;
+  font-weight: 600;
+}
+
+.role-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.role-buttons button {
+  flex: 1;
+  padding: 8px 5px;
+  font-size: 13px;
+  background: white;
+  color: #3c7f50;
+  border: 1px solid #3c7f50;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.role-buttons button.active {
+  background: #3c7f50;
+  color: white;
+}
+
+.role-buttons button:hover:not(.active) {
+  background: #f0fdf4;
+}

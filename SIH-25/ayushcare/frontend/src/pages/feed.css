@@ -1,0 +1,203 @@
+/* ====== PAGE BACKGROUND ====== */
+.feedback-root {
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #f0fdf4;
+  /* Light green background */
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.feedback-wrapper {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.main-title {
+  text-align: center;
+  color: #14532d;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* ====== LAYOUT GRID ====== */
+.feedback-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* ====== LEFT SIDE - TABS ====== */
+.therapy-tabs {
+  flex: 0 0 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.tab-btn {
+  padding: 16px 20px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  font-size: 16px;
+  color: #64748b;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.tab-btn:hover {
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+.tab-btn.active {
+  background: #15803d;
+  /* Green-700 */
+  color: white;
+  box-shadow: 0 4px 12px rgba(21, 128, 61, 0.3);
+}
+
+/* ====== RIGHT SIDE - CARD ====== */
+.feedback-content-card {
+  flex: 1;
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.session-header {
+  font-size: 24px;
+  color: #1e293b;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+/* ====== QUESTIONS ====== */
+.feedback-question {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.feedback-question.focused {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.question-label {
+  display: block;
+  font-size: 18px;
+  color: #334155;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* ====== INPUTS - MATCHING THEME ====== */
+.rating-row {
+  display: flex;
+  gap: 15px;
+}
+
+.rating-row label {
+  background: #f1f5f9;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #475569;
+  font-weight: 500;
+}
+
+.rating-row label:hover {
+  background: #e2e8f0;
+}
+
+.rating-row input:checked+label,
+/* Note: simplified selector logic for CSS-only not perfect with nesting, usually handled by checking input status or just style input itself */
+.rating-row input {
+  margin-right: 8px;
+  accent-color: #15803d;
+}
+
+.feedback-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.feedback-textarea:focus {
+  outline: none;
+  border-color: #15803d;
+  box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.1);
+}
+
+/* ====== SUBMIT BUTTON ====== */
+.feedback-submit {
+  background: #15803d;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.feedback-submit:hover {
+  background: #166534;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(21, 128, 61, 0.2);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .feedback-layout {
+    flex-direction: column;
+  }
+
+  .therapy-tabs {
+    flex-direction: row;
+    overflow-x: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .tab-btn {
+    white-space: nowrap;
+    width: auto;
+  }
+}

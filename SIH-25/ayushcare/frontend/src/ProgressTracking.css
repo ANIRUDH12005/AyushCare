@@ -1,0 +1,88 @@
+.progress-container {
+  padding: 40px;
+  background: #f7f8fc;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.tabs button {
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: #eaeaea;
+  font-weight: 500;
+}
+
+.tabs button.active {
+  background: linear-gradient(135deg,#6c5ce7,#a29bfe);
+  color: white;
+}
+
+/* ======= METERS ======= */
+.meters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.meter-card {
+  background: white;
+  padding: 20px;
+  border-radius: 22px;
+  position: relative;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+}
+
+.meter-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.meter-center h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.meter-center p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ======= BAR GRAPH ======= */
+.bar-section {
+  margin-top: 70px;
+  background: white;
+  padding: 30px;
+  border-radius: 24px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.bar-section h2 {
+  margin-bottom: 20px;
+}
