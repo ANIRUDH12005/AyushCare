@@ -1,0 +1,14 @@
+{
+    "liveServer.settings.port": 5501,
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.analysis.extraPaths": [
+        "SIH-25/ayushcare/backend/backend01"
+    ],
+    "python.autoComplete.extraPaths": [
+        "SIH-25/ayushcare/backend/backend01"
+    ]
+}
